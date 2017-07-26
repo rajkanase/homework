@@ -1,0 +1,24 @@
+<div>
+  <h1>Attribute Directive</h1>
+  <h3>1.ngClass</h3>
+  <input type="text" [ngClass]="{myborder:pqr}">
+  <input type="button" value="Reverse" (click)="reverse()" class="btn btn-primary">
+
+  <h3>2.ngStyle</h3>
+  <input type="text" [ngStyle]="{'border':bord,'background-color':bgcolor}">
+
+  <h1>Structural Directive</h1>
+  <h3>1.ngIf</h3>
+  <input type="text" *ngIf="shouldshow" [ngStyle]="{'border':bord,'background-color':bgcolor}">
+  <input type="button" value="Show/Hide" (click)="shouldshow=!shouldshow" class="btn btn-primary">
+
+  <h3>2.ngFor</h3>
+  <ul>
+    <li *ngFor="let company of cmpny">{{company}}
+    </li>
+  </ul>
+  
+  
+
+  
+</div>
