@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { SizerDirective } from './directive/sizer.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    SizerDirective
   ],
   imports: [
     BrowserModule
