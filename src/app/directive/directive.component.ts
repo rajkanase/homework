@@ -11,6 +11,9 @@ export class DirectiveComponent implements OnInit {
   bord;
   bgcolor;
   cmpny;
+  xyz;
+  z;
+  
 
   constructor() {
     this.cmpny=[
@@ -25,9 +28,15 @@ export class DirectiveComponent implements OnInit {
     this.pqr=true;
     this.bord="2px solid red";
     this.bgcolor="blue";
+    this.z="hi"
    }
 
   ngOnInit() {
+  }
+
+  onButton(){
+    this.xyz=!this.xyz;
+    
   }
 
   reverse(){

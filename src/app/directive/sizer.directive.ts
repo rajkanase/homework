@@ -17,7 +17,7 @@ export class SizerDirective{
 
   @HostListener('mouseenter') bigger(){
       this.rend.setStyle(this.eleRef.nativeElement,'-webkit-transition','all .3s ease');
-      this.rend.setStyle(this.eleRef.nativeElement,'-webkit-transform','translateZ(0) scale(1.20)');
+      this.rend.setStyle(this.eleRef.nativeElement,'-webkit-transform','translateZ(0) scale(1.40)');
   }
 
   @HostListener('mouseleave') smaller(){
