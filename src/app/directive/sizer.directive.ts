@@ -24,6 +24,7 @@ export class SizerDirective{
       this.rend.setStyle(this.eleRef.nativeElement,'-webkit-transition','all .3s ease');
       this.rend.setStyle(this.eleRef.nativeElement,'-webkit-transform','translateZ(0) scale(1)');
   }
+  
 
 
 
