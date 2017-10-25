@@ -9,6 +9,10 @@ import { HugeService } from "app/service-comp/huge.service";
   providers : [HugeService]
 })
 export class AppComponent implements OnInit{
+
+  public out:string;
+  // public pvar;
+
   ngOnInit(): void {
     this.dt = this.ser.dt;
   }

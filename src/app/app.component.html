@@ -1,6 +1,23 @@
-<div class="container">
-  <app-lifecycle ></app-lifecycle>
+<!-- <div class="container"> -->
+  <!-- <app-directive></app-directive> -->
+  <!-- <app-lifecycle ></app-lifecycle> -->
+  <!-- <app-forms></app-forms> -->
+<!-- </div> -->
 
-  <app-lifecycle ></app-lifecycle>
 
-</div>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>This is Parent component</h1>
+      <hr>
+      Type here
+      <input type="text" [(ngModel)]="txtsd">
+      The input from child component is..{{out}}
+    </div>
+  </div>
+  <app-input (demoEvnt)="out=$event" [demo]="txtsd"></app-input>
+</div> -->
+
+
+<app-one (oneEvnt)="out=$event"></app-one>
+<app-two [twoEvnt]="out"></app-two>

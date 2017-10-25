@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-4">
+  <div class="form_main">
+              <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
+              <div class="form">
+              <form #myFom="ngForm" (ngSubmit)="onSub(myFom)">
+                  <input 
+                  type="text"
+                  placeholder="User Name"
+                  name="name"
+                  class="txt"
+                  [(ngModel)]="myData.userName"
+                  required
+                  #usNm="ngModel">
+                  <p class="well" *ngIf="usNm.invalid">Please Provide Username</p>
+
+                  <input 
+                  type="text"
+                  placeholder="Mobile No"
+                  name="mob"
+                  class="txt"
+                  [(ngModel)]="myData.email"
+                  required
+                  #em="ngModel">
+                  <p class="well" *ngIf="em.invalid">Please Provide Username</p>
+                  
+                  <input 
+                  type="text" 
+                  placeholder="Email"
+                  name="email"
+                  class="txt"
+                  [(ngModel)]="myData.pass"
+                  required
+                  #pass="ngModel">
+                  <p class="well" *ngIf="pass.invalid">Please Provide Username</p>                  
+                 
+                  <input type="submit" [disabled]="myFom.invalid" value="submit" name="submit" class="txt2">
+
+              </form>
+          </div>
+          </div>
+        </div>
+</div>
